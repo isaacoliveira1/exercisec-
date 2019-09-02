@@ -1,0 +1,126 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main(){
+    
+    /*
+    char caractere;
+    int inteiro;
+    float Float;
+    double Double;
+
+
+    printf ("\nCaractere: %d bytes\tem %d", sizeof(caractere), &caractere);
+    printf ("\nInteiro %d bytes\tem %d", sizeof(inteiro), &inteiro);
+      printf ("\nFloat %d bytes\tem %d", sizeof(Float), &Float);
+        printf ("\nDouble %d bytes\tem %d\n", sizeof(Double), &Double);
+   
+    long int n_segundos;
+   
+    printf ("Digite o número de segundos\n");
+    scanf("%ld", &n_segundos);
+
+    printf ("Horas  :%d\n", (int) n_segundos/3600);
+
+    printf ("Minutos  :%d\n", (int) n_segundos%3600/60);
+
+    printf ("Segundos  :%d\n", (int) n_segundos%60);
+
+
+
+
+  int x, mult;
+    setlocale(LC_ALL, "Portuguese");
+    printf ("Digite o numero\n");
+      scanf("%d", &x);
+
+
+        if(x%2==0) {
+          printf ("%d Numero par\n", x);
+        mult = x * 2;
+        printf("Resultado: %d\n", mult);
+}
+        else {
+        mult = x * 3;
+           printf ("%d Numero impar\n", x);
+        printf ("Resultado: %d\n", mult);
+    }
+
+    int x;
+    printf ("Digite um numero\n");
+    scanf("%d", &x);
+    if (x>=0) printf("%d eh Postivo\n", x);
+    else printf("%d eh Negativo\n", x);
+
+    int x1;
+    printf ("Digite um ano\n");
+    scanf("%d", &x1);
+
+    if ( x1%100 !=0 &&  x1%4 == 0 || x1%400 == 0) printf ("O ano eh bissexto");
+    else printf ("O ano nao eh bissexto");
+
+
+    int num,num1,num2;
+    int maior, menor;
+    printf ("Digite o 1 numero\n");
+    scanf ("%d", &num);
+     printf ("Digite o 1 numero\n");
+    scanf ("%d", &num1);
+     printf ("Digite o 1 numero\n");
+    scanf ("%d", &num2);
+
+    if (num > num1 && num > num2){
+    maior = num;
+    printf ("Maior numero eh %d", num);
+}
+  if (num1 > num && num1 > num2){
+    maior = num1;
+    printf ("Maior numero eh %d", num1);
+  }
+    if (num2 > num1 && num2 > num){
+    maior = num2;
+    printf ("Maior numero eh %d", num2);
+  }
+*/
+    int id, id1, id2;
+    char nome[50],nome1[50],nome2[50];
+    int maior, menor;
+    printf ("Digite o nome da 1 pessoa\n");
+    scanf ("%s", &nome);
+    printf("Digite a idade da 1 pessoa\n");
+    scanf ("%d", &id);
+        printf ("Digite o nome da 2 pessoa\n");
+    scanf ("%s", &nome1);
+    printf("Digite a idade da 2 pessoa\n");
+    scanf ("%d", &id1);
+        printf ("Digite o nome da 3 pessoa\n");
+    scanf ("%s", &nome2);
+    printf("Digite a idade da 3 pessoa\n");
+    scanf ("%d", &id2);
+    if (id > id1 && id > id2){
+      maior = id;
+      printf ("O mais velho eh: %s com %d anos\n", nome, maior);
+    }
+    if (id1 > id && id1 > id2){
+      maior = id1;
+      printf ("O mais velho eh: %s com %d anos\n", nome1, maior);
+    }
+     if (id2 > id && id2 > id1){
+      maior = id2;
+      printf ("O mais velho eh: %s com %d anos\n", nome2, maior);
+    }
+    if (id < id1 && id < id2){
+    menor = id;
+    printf ("O mais novo eh %s com %d anos\n", nome, id);
+    }
+      if (id1 < id && id1 < id2){
+    menor = id1;
+    printf ("O mais novo eh %s com %d anos\n", nome1, id1);
+    }
+    if (id2 < id1 && id2 < id){
+    menor = id2;
+    printf ("O mais novo eh %s com %d anos\n", nome2, id2);
+    }
+    return 0;
+
+}
